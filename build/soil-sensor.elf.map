@@ -1213,9 +1213,9 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
  .text.async_context_base_needs_servicing
                 0x00000000       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
- .text          0x00000000        0x0 /tmp/cc4tzIbn.o
- .data          0x00000000        0x0 /tmp/cc4tzIbn.o
- .bss           0x00000000        0x0 /tmp/cc4tzIbn.o
+ .text          0x00000000        0x0 /tmp/ccushLUf.o
+ .data          0x00000000        0x0 /tmp/ccushLUf.o
+ .bss           0x00000000        0x0 /tmp/ccushLUf.o
  .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000       0x10 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1483,11 +1483,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/cc4tzIbn.o
+ .boot2         0x10000000      0x100 /tmp/ccushLUf.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x82b0
+.text           0x10000100     0x82b8
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1549,636 +1549,637 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002bc       0x98 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.startup.main
-                0x10000354       0xb0 CMakeFiles/soil-sensor.dir/soil-sensor.c.obj
+                0x10000354       0xb4 CMakeFiles/soil-sensor.dir/soil-sensor.c.obj
                 0x10000354                main
  .text.gpio_set_function
-                0x10000404       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000404                gpio_set_function
+                0x10000408       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000408                gpio_set_function
  .text.gpio_set_pulls
-                0x10000434       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000434                gpio_set_pulls
+                0x10000438       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000438                gpio_set_pulls
  .text.gpio_set_input_hysteresis_enabled
-                0x10000458       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000458                gpio_set_input_hysteresis_enabled
+                0x1000045c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000045c                gpio_set_input_hysteresis_enabled
  .text.gpio_set_irq_enabled
-                0x10000480       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000480                gpio_set_irq_enabled
+                0x10000484       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000484                gpio_set_irq_enabled
  .text.gpio_add_raw_irq_handler_with_order_priority_masked
-                0x100004d4       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100004d4                gpio_add_raw_irq_handler_with_order_priority_masked
+                0x100004d8       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100004d8                gpio_add_raw_irq_handler_with_order_priority_masked
  .text.gpio_remove_raw_irq_handler_masked
-                0x10000518       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000518                gpio_remove_raw_irq_handler_masked
+                0x1000051c       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000051c                gpio_remove_raw_irq_handler_masked
  .text.gpio_set_input_enabled
-                0x10000538       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000538                gpio_set_input_enabled
+                0x1000053c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x1000053c                gpio_set_input_enabled
  .text.gpio_init
-                0x10000560       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000560                gpio_init
+                0x10000564       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000564                gpio_init
  .text.running_on_fpga
-                0x1000059c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x1000059c                running_on_fpga
+                0x100005a0       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x100005a0                running_on_fpga
  .text.hw_claim_lock
-                0x100005ac       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100005ac                hw_claim_lock
+                0x100005b0       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100005b0                hw_claim_lock
  .text.hw_claim_unlock
-                0x100005c4       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100005c4                hw_claim_unlock
+                0x100005c8       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100005c8                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x100005d8       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100005d8                hw_claim_or_assert
+                0x100005dc       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100005dc                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x1000061c       0x9c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x1000061c                hw_claim_unused_from_range
+                0x10000620       0x9c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000620                hw_claim_unused_from_range
  .text.hw_claim_clear
-                0x100006b8       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x100006b8                hw_claim_clear
+                0x100006bc       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100006bc                hw_claim_clear
  .text.spin_locks_reset
-                0x100006f0       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100006f0                spin_locks_reset
+                0x100006f4       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100006f4                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x1000070c       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x1000070c                next_striped_spin_lock_num
+                0x10000710       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000710                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x10000724       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000724                irq_set_enabled
+                0x10000728       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000728                irq_set_enabled
  .text.irq_set_pending
-                0x10000748       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000748                irq_set_pending
+                0x1000074c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000074c                irq_set_pending
  .text.irq_get_vtable_handler
-                0x10000758       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000758                irq_get_vtable_handler
+                0x1000075c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000075c                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10000768       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000768                irq_set_exclusive_handler
+                0x1000076c       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000076c                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x100007bc      0x1f4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100007bc                irq_add_shared_handler
+                0x100007c0      0x1f4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100007c0                irq_add_shared_handler
  .text.irq_remove_handler
-                0x100009b0      0x1c4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100009b0                irq_remove_handler
+                0x100009b4      0x1c4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100009b4                irq_remove_handler
  .text.irq_set_priority
-                0x10000b74       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b74                irq_set_priority
+                0x10000b78       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000b78                irq_set_priority
  .text.irq_add_tail_to_free_list
-                0x10000b9c       0xb4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000b9c                irq_add_tail_to_free_list
+                0x10000ba0       0xb4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ba0                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000c50       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000c50                irq_init_priorities
+                0x10000c54       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000c54                irq_init_priorities
  .text.user_irq_unclaim
-                0x10000c74       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000c74                user_irq_unclaim
+                0x10000c78       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000c78                user_irq_unclaim
  .text.user_irq_claim_unused
-                0x10000c88       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000c88                user_irq_claim_unused
+                0x10000c8c       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000c8c                user_irq_claim_unused
  .text.sem_init
-                0x10000cb4       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-                0x10000cb4                sem_init
+                0x10000cb8       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+                0x10000cb8                sem_init
  .text.lock_init
-                0x10000cd4       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000cd4                lock_init
+                0x10000cd8       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000cd8                lock_init
  .text.mutex_init
-                0x10000ce4       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000ce4                mutex_init
+                0x10000ce8       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000ce8                mutex_init
  .text.recursive_mutex_init
-                0x10000d00       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000d00                recursive_mutex_init
+                0x10000d04       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000d04                recursive_mutex_init
  .text.timer_pool_entry_comparator
-                0x10000d1c       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000d1c                timer_pool_entry_comparator
+                0x10000d20       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d20                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x10000d50       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d54       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x10000d80      0x100 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d84      0x100 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000e80      0x1c0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000e84      0x1c0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10001040       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001040                alarm_pool_init_default
+                0x10001044       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001044                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x100010ac        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100010ac                alarm_pool_get_default
+                0x100010b0        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100010b0                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x100010b4      0x188 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100010b4                alarm_pool_add_alarm_at
+                0x100010b8      0x188 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100010b8                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x1000123c       0x74 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000123c                alarm_pool_cancel_alarm
+                0x10001240       0x74 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001240                alarm_pool_cancel_alarm
  .text.sleep_until
-                0x100012b0       0xc4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100012b0                sleep_until
+                0x100012b4       0xc4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100012b4                sleep_until
  .text.sleep_ms
-                0x10001374       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001374                sleep_ms
+                0x10001378       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001378                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x100013ac       0xec CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100013ac                best_effort_wfe_or_timeout
+                0x100013b0       0xec CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100013b0                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x10001498       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000149c       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001554       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001554                hardware_alarm_claim
+                0x10001558       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001558                hardware_alarm_claim
  .text.time_us_64
-                0x1000156c       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x1000156c                time_us_64
+                0x10001570       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001570                time_us_64
  .text.busy_wait_us
-                0x10001580       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001580                busy_wait_us
+                0x10001584       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001584                busy_wait_us
  .text.busy_wait_until
-                0x100015e8       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100015e8                busy_wait_until
+                0x100015ec       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100015ec                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x10001608       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001608                hardware_alarm_set_callback
+                0x1000160c       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000160c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10001694       0xd0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001694                hardware_alarm_set_target
+                0x10001698       0xd0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001698                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001764       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001764                hardware_alarm_cancel
+                0x10001768       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001768                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x100017a0       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100017a4       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x10001804       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001804                ph_post_alloc_init
+                0x10001808       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001808                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10001840       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001840                ph_merge_two_pass
+                0x10001844       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001844                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100018d8      0x100 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100018dc      0x100 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x100019d8      0x104 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100019d8                ph_remove_head
+                0x100019dc      0x104 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100019dc                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001adc       0x78 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001adc                ph_remove_and_free_node
+                0x10001ae0       0x78 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001ae0                ph_remove_and_free_node
  .text.uart_init
-                0x10001b54      0x188 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001b54                uart_init
+                0x10001b58      0x188 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001b58                uart_init
  .text.clocks_init
-                0x10001cdc      0x2c8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001cdc                clocks_init
+                0x10001ce0      0x2c8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001ce0                clocks_init
  .text.clock_get_hz
-                0x10001fa4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001fa4                clock_get_hz
+                0x10001fa8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001fa8                clock_get_hz
  .text.pll_init
-                0x10001fb0       0xa0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001fb0                pll_init
+                0x10001fb4       0xa0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001fb4                pll_init
  .text.watchdog_start_tick
-                0x10002050       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10002050                watchdog_start_tick
+                0x10002054       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10002054                watchdog_start_tick
  .text.xosc_init
-                0x10002060       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10002060                xosc_init
+                0x10002064       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10002064                xosc_init
  .text.runtime_init
-                0x10002088       0xf0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002088                runtime_init
- .text._exit    0x10002178        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002178                _exit
- .text.exit     0x1000217c        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000217c                exit
- .text.panic    0x10002184       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002184                panic
+                0x1000208c       0xf0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000208c                runtime_init
+ .text._exit    0x1000217c        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000217c                _exit
+ .text.exit     0x10002180        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002180                exit
+ .text.panic    0x10002188       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002188                panic
  .text.hard_assertion_failure
-                0x100021b4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x100021b4                hard_assertion_failure
+                0x100021b8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100021b8                hard_assertion_failure
  .text._out_null
-                0x100021c0        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100021c4        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x100021c4       0x90 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100021c8       0x90 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x10002254      0x1f4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002258      0x1f4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x10002448       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000244c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x10002458       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x10002468      0x454 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x100028bc      0x3c4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000245c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x1000246c      0x454 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x100028c0      0x3c4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002c80      0xb24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002c84      0xb24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x100037a4       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x100037a4                vfctprintf
+                0x100037a8       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100037a8                vfctprintf
  .text.weak_raw_vprintf
-                0x100037c4       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x100037c4                weak_raw_vprintf
- .text          0x100037f4       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .text.ctzsi    0x10003804        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x10003804                __wrap___ctzsi2
+                0x100037c8       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100037c8                weak_raw_vprintf
+ .text          0x100037f8       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .text.ctzsi    0x10003808        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003808                __wrap___ctzsi2
  .text.rom_func_lookup
-                0x10003810       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003810                rom_func_lookup
+                0x10003814       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003814                rom_func_lookup
  .text.rom_data_lookup
-                0x10003820       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003820                rom_data_lookup
+                0x10003824       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003824                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003830       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003830                rom_funcs_lookup
+                0x10003834       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003834                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x10003874       0x50 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003874                __wrap___aeabi_idivmod
-                0x10003874                divmod_s32s32
-                0x10003874                div_s32s32
-                0x10003874                __wrap___aeabi_idiv
-                0x1000387c                divmod_s32s32_unsafe
-                0x100038a8                divmod_s32s32_savestate
+                0x10003878       0x50 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003878                __wrap___aeabi_idivmod
+                0x10003878                divmod_s32s32
+                0x10003878                div_s32s32
+                0x10003878                __wrap___aeabi_idiv
+                0x10003880                divmod_s32s32_unsafe
+                0x100038ac                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x100038c4       0x4c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100038c4                __wrap___aeabi_uidiv
-                0x100038c4                __wrap___aeabi_uidivmod
-                0x100038c4                div_u32u32
-                0x100038c4                divmod_u32u32
-                0x100038cc                divmod_u32u32_unsafe
-                0x100038f4                divmod_u32u32_savestate
+                0x100038c8       0x4c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100038c8                __wrap___aeabi_uidiv
+                0x100038c8                __wrap___aeabi_uidivmod
+                0x100038c8                div_u32u32
+                0x100038c8                divmod_u32u32
+                0x100038d0                divmod_u32u32_unsafe
+                0x100038f8                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003910      0x424 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003910                div_s64s64
-                0x10003910                divmod_s64s64
-                0x10003910                __wrap___aeabi_ldivmod
-                0x10003940                div_u64u64
-                0x10003940                divmod_u64u64
-                0x10003940                __wrap___aeabi_uldivmod
-                0x10003950                divmod_u64u64_savestate
-                0x10003970                divmod_s64s64_unsafe
-                0x100039f8                divmod_u64u64_unsafe
+                0x10003914      0x424 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003914                div_s64s64
+                0x10003914                divmod_s64s64
+                0x10003914                __wrap___aeabi_ldivmod
+                0x10003944                div_u64u64
+                0x10003944                divmod_u64u64
+                0x10003944                __wrap___aeabi_uldivmod
+                0x10003954                divmod_u64u64_savestate
+                0x10003974                divmod_s64s64_unsafe
+                0x100039fc                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003d34       0x60 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d34                __wrap___aeabi_drsub
-                0x10003d3a                __wrap___aeabi_dsub
-                0x10003d44                __wrap___aeabi_dadd
-                0x10003d4e                __wrap___aeabi_ddiv
-                0x10003d82                __wrap___aeabi_dmul
+                0x10003d38       0x60 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d38                __wrap___aeabi_drsub
+                0x10003d3e                __wrap___aeabi_dsub
+                0x10003d48                __wrap___aeabi_dadd
+                0x10003d52                __wrap___aeabi_ddiv
+                0x10003d86                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003d94       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003d94                __wrap___aeabi_cdrcmple
-                0x10003da4                __wrap___aeabi_cdcmple
-                0x10003da4                __wrap___aeabi_cdcmpeq
+                0x10003d98       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d98                __wrap___aeabi_cdrcmple
+                0x10003da8                __wrap___aeabi_cdcmple
+                0x10003da8                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003e00        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e00                __wrap___aeabi_dcmplt
+                0x10003e04        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e04                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmpge
-                0x10003e0c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e0c                __wrap___aeabi_dcmpge
+                0x10003e10       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e10                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003e1c        0xa CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e1c                __wrap___aeabi_dcmpgt
+                0x10003e20        0xa CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e20                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003e26       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e26                __wrap___aeabi_dcmpun
- *fill*         0x10003e42        0x2 
+                0x10003e2a       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e2a                __wrap___aeabi_dcmpun
+ *fill*         0x10003e46        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003e44       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e44                __wrap___aeabi_ui2d
-                0x10003e4c                __wrap___aeabi_i2d
+                0x10003e48       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e48                __wrap___aeabi_ui2d
+                0x10003e50                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003e7c       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003e7c                __wrap___aeabi_d2iz
-                0x10003e7c                double2int_z
+                0x10003e80       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003e80                __wrap___aeabi_d2iz
+                0x10003e80                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10003ec4       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003ec4                double2uint
-                0x10003ec4                __wrap___aeabi_d2uiz
+                0x10003ec8       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ec8                double2uint
+                0x10003ec8                __wrap___aeabi_d2uiz
  .text.missing_double_func_shim
-                0x10003ed4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003ed8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .text.__aeabi_double_init
-                0x10003ee0       0x94 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003ee0                __aeabi_double_init
+                0x10003ee4       0x94 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003ee4                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10003f74       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003f74                double_table_shim_on_use_helper
+                0x10003f78       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003f78                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10003fa0       0x32 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10003fa0                __wrap___aeabi_lmul
- *fill*         0x10003fd2        0x2 
+                0x10003fa4       0x32 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10003fa4                __wrap___aeabi_lmul
+ *fill*         0x10003fd6        0x2 
  .text.missing_float_func_shim
-                0x10003fd4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10003fd8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .text.__aeabi_float_init
-                0x10003fe0       0x5c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10003fe0                __aeabi_float_init
- .text          0x1000403c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x1000403c                __aeabi_mem_init
- .text.memset   0x1000404c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x1000404c                __wrap_memset
- .text.memcpy   0x10004058        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004058                __wrap___aeabi_memcpy
-                0x10004058                __wrap_memcpy
+                0x10003fe4       0x5c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10003fe4                __aeabi_float_init
+ .text          0x10004040       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004040                __aeabi_mem_init
+ .text.memset   0x10004050        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004050                __wrap_memset
+ .text.memcpy   0x1000405c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x1000405c                __wrap___aeabi_memcpy
+                0x1000405c                __wrap_memcpy
  .text.stdio_out_chars_crlf
-                0x10004064       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004068       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10004120       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004124       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10004184       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004184                __wrap_putchar
+                0x10004188       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004188                __wrap_putchar
  .text.__wrap_puts
-                0x1000421c       0xe0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000421c                __wrap_puts
+                0x10004220       0xe0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004220                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x100042fc       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100042fc                stdio_set_driver_enabled
+                0x10004300       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004300                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x1000432c       0xd4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000432c                __wrap_vprintf
+                0x10004330       0xd4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004330                __wrap_vprintf
  .text.__wrap_printf
-                0x10004400       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004400                __wrap_printf
+                0x10004404       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004404                __wrap_printf
  .text.stdio_init_all
-                0x10004418        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004418                stdio_init_all
+                0x1000441c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000441c                stdio_init_all
  .text.stdio_uart_out_chars
-                0x10004424       0x4c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004428       0x4c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x10004470       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10004470                stdio_uart_in_chars
+                0x10004474       0x98 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004474                stdio_uart_in_chars
  .text.on_uart_rx
-                0x10004508       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x1000450c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x10004530       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10004534       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x100045bc       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x100045bc                stdio_uart_init
+                0x100045c0       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100045c0                stdio_uart_init
  .text.adc_init
-                0x10004604       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-                0x10004604                adc_init
+                0x10004608       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+                0x10004608                adc_init
  .text.cyw43_arch_set_async_context
-                0x1000463c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
-                0x1000463c                cyw43_arch_set_async_context
+                0x10004640        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+                0x10004640                cyw43_arch_set_async_context
  .text.cyw43_arch_gpio_put
-                0x10004648       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
-                0x10004648                cyw43_arch_gpio_put
+                0x1000464c       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+                0x1000464c                cyw43_arch_gpio_put
  .text.cyw43_arch_async_context
-                0x1000465c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
-                0x1000465c                cyw43_arch_async_context
+                0x10004660        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+                0x10004660                cyw43_arch_async_context
  .text.cyw43_arch_init
-                0x10004668       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
-                0x10004668                cyw43_arch_init
+                0x1000466c       0x64 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+                0x1000466c                cyw43_arch_init
  .text.startup._retrieve_unique_id_on_boot
-                0x100046cc       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x100046d0       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id
-                0x100046dc       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x100046dc                pico_get_unique_board_id
+                0x100046e0       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x100046e0                pico_get_unique_board_id
  .text.flash_get_unique_id
-                0x100046ec       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x100046ec                flash_get_unique_id
+                0x100046f0       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x100046f0                flash_get_unique_id
  .text.ns_delay.constprop.0
-                0x1000472c       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004730       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .text.cyw43_spi_deinit
-                0x1000474c       0x7c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x1000474c                cyw43_spi_deinit
+                0x10004750       0x7c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004750                cyw43_spi_deinit
  .text.cyw43_spi_init
-                0x100047c8      0x14c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x100047c8                cyw43_spi_init
+                0x100047cc      0x14c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x100047cc                cyw43_spi_init
  .text.cyw43_spi_transfer
-                0x10004914      0x3fc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004914                cyw43_spi_transfer
+                0x10004918      0x3fc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004918                cyw43_spi_transfer
  .text.cyw43_spi_gpio_setup
-                0x10004d10       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004d10                cyw43_spi_gpio_setup
+                0x10004d14       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004d14                cyw43_spi_gpio_setup
  .text.cyw43_spi_reset
-                0x10004d4c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004d4c                cyw43_spi_reset
+                0x10004d50       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004d50                cyw43_spi_reset
  .text.read_reg_u32_swap
-                0x10004d74       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004d74                read_reg_u32_swap
+                0x10004d78       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004d78                read_reg_u32_swap
  .text.cyw43_read_reg_u32
-                0x10004db0       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004db0                cyw43_read_reg_u32
+                0x10004db4       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004db4                cyw43_read_reg_u32
  .text.cyw43_read_reg_u16
-                0x10004e04       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004e04                cyw43_read_reg_u16
+                0x10004e08       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004e08                cyw43_read_reg_u16
  .text.cyw43_read_reg_u8
-                0x10004e58       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004e58                cyw43_read_reg_u8
+                0x10004e5c       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004e5c                cyw43_read_reg_u8
  .text.write_reg_u32_swap
-                0x10004eac      0x1e8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10004eac                write_reg_u32_swap
+                0x10004eb0      0x1e8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10004eb0                write_reg_u32_swap
  .text.cyw43_write_reg_u32
-                0x10005094      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10005094                cyw43_write_reg_u32
+                0x10005098      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10005098                cyw43_write_reg_u32
  .text.cyw43_write_reg_u16
-                0x1000529c      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x1000529c                cyw43_write_reg_u16
+                0x100052a0      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x100052a0                cyw43_write_reg_u16
  .text.cyw43_write_reg_u8
-                0x100054a4      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x100054a4                cyw43_write_reg_u8
+                0x100054a8      0x208 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x100054a8                cyw43_write_reg_u8
  .text.cyw43_read_bytes
-                0x100056ac       0x78 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x100056ac                cyw43_read_bytes
+                0x100056b0       0x78 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x100056b0                cyw43_read_bytes
  .text.cyw43_write_bytes
-                0x10005724       0xdc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-                0x10005724                cyw43_write_bytes
+                0x10005728       0xdc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10005728                cyw43_write_bytes
  .text.cyw43_set_backplane_window
-                0x10005800       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005804       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_ll_parse_async_event
-                0x10005868      0x134 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1000586c      0x134 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_kso_set
-                0x1000599c       0x80 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x100059a0       0x80 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_ll_sdpcm_poll_device
-                0x10005a1c      0x234 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005a20      0x234 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_sdpcm_send_common
-                0x10005c50       0xf4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005c54       0xf4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_do_ioctl
-                0x10005d44      0x110 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005d48      0x110 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_do_ioctl.constprop.0
-                0x10005e54      0x108 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005e58      0x108 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_read_backplane.constprop.0
-                0x10005f5c       0xe4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10005f60       0xe4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.reset_device_core.constprop.0
-                0x10006040      0x410 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10006044      0x410 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .text.cyw43_ll_init
-                0x10006450       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x10006450                cyw43_ll_init
+                0x10006454       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10006454                cyw43_ll_init
  .text.cyw43_ll_deinit
-                0x1000646c        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x1000646c                cyw43_ll_deinit
+                0x10006470        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10006470                cyw43_ll_deinit
  .text.cyw43_ll_process_packets
-                0x10006474       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x10006474                cyw43_ll_process_packets
+                0x10006478       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10006478                cyw43_ll_process_packets
  .text.cyw43_ll_ioctl
-                0x100064c8       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x100064c8                cyw43_ll_ioctl
+                0x100064cc       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x100064cc                cyw43_ll_ioctl
  .text.cyw43_ll_bus_sleep
-                0x100064e8       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x100064e8                cyw43_ll_bus_sleep
+                0x100064ec       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x100064ec                cyw43_ll_bus_sleep
  .text.cyw43_ll_bus_init
-                0x1000651c      0xbd0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x1000651c                cyw43_ll_bus_init
+                0x10006520      0xbd0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10006520                cyw43_ll_bus_init
  .text.cyw43_ll_wifi_get_mac
-                0x100070ec       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x100070ec                cyw43_ll_wifi_get_mac
+                0x100070f0       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x100070f0                cyw43_ll_wifi_get_mac
  .text.cyw43_ll_wifi_set_wpa_auth
-                0x1000712c       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x1000712c                cyw43_ll_wifi_set_wpa_auth
+                0x10007130       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10007130                cyw43_ll_wifi_set_wpa_auth
  .text.cyw43_ll_wifi_rejoin
-                0x10007158       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x10007158                cyw43_ll_wifi_rejoin
+                0x1000715c       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x1000715c                cyw43_ll_wifi_rejoin
  .text.cyw43_ll_gpio_set
-                0x10007174       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x10007174                cyw43_ll_gpio_set
+                0x10007178       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10007178                cyw43_ll_gpio_set
  .text.cyw43_ll_has_work
-                0x100071e0       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-                0x100071e0                cyw43_ll_has_work
+                0x100071e4       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x100071e4                cyw43_ll_has_work
  .text.cyw43_poll_func
-                0x100071f4       0xc0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100071f8       0xc0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .text.cyw43_init
-                0x100072b4       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x100072b4                cyw43_init
+                0x100072b8       0x6c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100072b8                cyw43_init
  .text.cyw43_deinit
-                0x10007320       0x90 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x10007320                cyw43_deinit
+                0x10007324       0x90 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x10007324                cyw43_deinit
  .text.cyw43_cb_read_host_interrupt_pin
-                0x100073b0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x100073b0                cyw43_cb_read_host_interrupt_pin
+                0x100073b4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100073b4                cyw43_cb_read_host_interrupt_pin
  .text.cyw43_cb_ensure_awake
-                0x100073bc        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x100073bc                cyw43_cb_ensure_awake
+                0x100073c0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100073c0                cyw43_cb_ensure_awake
  .text.cyw43_cb_process_async_event
-                0x100073c8      0x214 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x100073c8                cyw43_cb_process_async_event
+                0x100073cc      0x214 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100073cc                cyw43_cb_process_async_event
  .text.cyw43_gpio_set
-                0x100075dc       0xa0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-                0x100075dc                cyw43_gpio_set
+                0x100075e0       0xa0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x100075e0                cyw43_gpio_set
  .text.pio_sm_unclaim
-                0x1000767c       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x1000767c                pio_sm_unclaim
+                0x10007680       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10007680                pio_sm_unclaim
  .text.pio_claim_unused_sm
-                0x1000769c       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x1000769c                pio_claim_unused_sm
+                0x100076a0       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100076a0                pio_claim_unused_sm
  .text.pio_can_add_program
-                0x100076d8       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x100076d8                pio_can_add_program
+                0x100076dc       0x68 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100076dc                pio_can_add_program
  .text.pio_add_program
-                0x10007740       0xf0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10007740                pio_add_program
+                0x10007744       0xf0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10007744                pio_add_program
  .text.pio_remove_program
-                0x10007830       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10007830                pio_remove_program
+                0x10007834       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10007834                pio_remove_program
  .text.pio_sm_set_pindirs_with_mask
-                0x10007864       0xa8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10007864                pio_sm_set_pindirs_with_mask
+                0x10007868       0xa8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10007868                pio_sm_set_pindirs_with_mask
  .text.pio_sm_set_consecutive_pindirs
-                0x1000790c       0xa8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x1000790c                pio_sm_set_consecutive_pindirs
+                0x10007910       0xa8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10007910                pio_sm_set_consecutive_pindirs
  .text.dma_channel_unclaim
-                0x100079b4       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-                0x100079b4                dma_channel_unclaim
+                0x100079b8       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+                0x100079b8                dma_channel_unclaim
  .text.dma_claim_unused_channel
-                0x100079c8       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-                0x100079c8                dma_claim_unused_channel
+                0x100079cc       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+                0x100079cc                dma_claim_unused_channel
  .text.dma_channel_cleanup
-                0x100079ec       0x60 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-                0x100079ec                dma_channel_cleanup
+                0x100079f0       0x60 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+                0x100079f0                dma_channel_cleanup
  .text.cyw43_sleep_timeout_reached
-                0x10007a4c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007a50       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
  .text.cyw43_irq_init
-                0x10007a5c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007a5c                cyw43_irq_init
+                0x10007a60       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007a60                cyw43_irq_init
  .text.cyw43_irq_deinit
-                0x10007a84       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007a84                cyw43_irq_deinit
+                0x10007a88       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007a88                cyw43_irq_deinit
  .text.cyw43_gpio_irq_handler
-                0x10007aa4       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007aa8       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
  .text.cyw43_do_poll
-                0x10007ae8       0x70 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007aec       0x70 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
  .text.cyw43_post_poll_hook
-                0x10007b58       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007b58                cyw43_post_poll_hook
+                0x10007b5c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007b5c                cyw43_post_poll_hook
  .text.cyw43_schedule_internal_poll_dispatch
-                0x10007b68       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007b68                cyw43_schedule_internal_poll_dispatch
+                0x10007b6c       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007b6c                cyw43_schedule_internal_poll_dispatch
  .text.cyw43_driver_init
-                0x10007b80       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007b80                cyw43_driver_init
+                0x10007b84       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007b84                cyw43_driver_init
  .text.cyw43_driver_deinit
-                0x10007bb8       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007bb8                cyw43_driver_deinit
+                0x10007bbc       0x44 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007bbc                cyw43_driver_deinit
  .text.cyw43_hal_generate_laa_mac
-                0x10007bfc       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007bfc                cyw43_hal_generate_laa_mac
+                0x10007c00       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007c00                cyw43_hal_generate_laa_mac
  .text.cyw43_thread_enter
-                0x10007c24       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007c24                cyw43_thread_enter
+                0x10007c28       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007c28                cyw43_thread_enter
  .text.cyw43_thread_exit
-                0x10007c38       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007c38                cyw43_thread_exit
+                0x10007c3c       0x14 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007c3c                cyw43_thread_exit
  .text.cyw43_await_background_or_timeout_us
-                0x10007c4c       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007c4c                cyw43_await_background_or_timeout_us
+                0x10007c50       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007c50                cyw43_await_background_or_timeout_us
  .text.cyw43_delay_ms
-                0x10007c80       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007c80                cyw43_delay_ms
+                0x10007c84       0x48 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007c84                cyw43_delay_ms
  .text.cyw43_cb_tcpip_deinit
-                0x10007cc8        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007cc8                cyw43_cb_tcpip_deinit
+                0x10007ccc        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007ccc                cyw43_cb_tcpip_deinit
  .text.cyw43_cb_tcpip_set_link_up
-                0x10007ccc        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007ccc                cyw43_cb_tcpip_set_link_up
+                0x10007cd0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007cd0                cyw43_cb_tcpip_set_link_up
  .text.cyw43_cb_tcpip_set_link_down
-                0x10007cd8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007cd8                cyw43_cb_tcpip_set_link_down
+                0x10007cdc        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007cdc                cyw43_cb_tcpip_set_link_down
  .text.cyw43_cb_process_ethernet
-                0x10007ce4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-                0x10007ce4                cyw43_cb_process_ethernet
+                0x10007ce8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x10007ce8                cyw43_cb_process_ethernet
  .text.async_context_threadsafe_background_acquire_lock_blocking
-                0x10007cf0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007cf4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.alarm_handler
-                0x10007cfc       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007d00       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_set_work_pending
-                0x10007d1c       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007d20       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.process_under_lock
-                0x10007d38       0xcc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007d3c       0xcc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_execute_sync
-                0x10007e04       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-                0x10007e04                async_context_threadsafe_background_execute_sync
+                0x10007e08       0x30 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007e08                async_context_threadsafe_background_execute_sync
  .text.async_context_threadsafe_background_deinit
-                0x10007e34       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007e38       0x54 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.low_priority_irq_handler
-                0x10007e88       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007e8c       0x3c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_wait_for_work_until
-                0x10007ec4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007ec8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_wait_until
-                0x10007ed0       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007ed4       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_lock_check
-                0x10007eec       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007ef0       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_release_lock
-                0x10007f14       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007f18       0x1c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_add_at_time_worker
-                0x10007f30       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007f34       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_remove_at_time_worker
-                0x10007f64       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007f68       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_add_when_pending_worker
-                0x10007f98       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007f9c       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_when_pending_worker
-                0x10007fcc       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10007fd0       0x34 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .text.async_context_threadsafe_background_default_config
-                0x10008000        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-                0x10008000                async_context_threadsafe_background_default_config
+                0x10008004        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10008004                async_context_threadsafe_background_default_config
  .text.async_context_threadsafe_background_init
-                0x1000800c       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-                0x1000800c                async_context_threadsafe_background_init
+                0x10008010       0x8c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x10008010                async_context_threadsafe_background_init
  .text.async_context_base_add_at_time_worker
-                0x10008098       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-                0x10008098                async_context_base_add_at_time_worker
+                0x1000809c       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+                0x1000809c                async_context_base_add_at_time_worker
  .text.async_context_base_remove_at_time_worker
-                0x100080bc       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-                0x100080bc                async_context_base_remove_at_time_worker
+                0x100080c0       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+                0x100080c0                async_context_base_remove_at_time_worker
  .text.async_context_base_add_when_pending_worker
-                0x100080e4       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-                0x100080e4                async_context_base_add_when_pending_worker
+                0x100080e8       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+                0x100080e8                async_context_base_add_when_pending_worker
  .text.async_context_base_remove_when_pending_worker
-                0x10008108       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-                0x10008108                async_context_base_remove_when_pending_worker
+                0x1000810c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+                0x1000810c                async_context_base_remove_when_pending_worker
  .text.async_context_base_execute_once
-                0x10008130       0xfc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-                0x10008130                async_context_base_execute_once
- .text          0x1000822c       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x1000822c                strlen
- .text          0x10008288       0x74 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strncmp.o)
-                0x10008288                strncmp
+                0x10008134       0xfc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+                0x10008134                async_context_base_execute_once
+ .text          0x10008230       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x10008230                strlen
+ .text          0x1000828c       0x74 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strncmp.o)
+                0x1000828c                strncmp
  *(.fini)
- .fini          0x100082fc        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
-                0x100082fc                _fini
- .fini.__stub   0x10008300       0xb0 linker stubs
+ .fini          0x10008300        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
+                0x10008300                _fini
+ *fill*         0x10008304        0x4 
+ .fini.__stub   0x10008308       0xb0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2190,173 +2191,173 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x100083b0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x100083b0                . = ALIGN (0x4)
+ .eh_frame      0x100083b8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x100083b8                . = ALIGN (0x4)
 
-.glue_7         0x100083b0        0x0
- .glue_7        0x100083b0        0x0 linker stubs
+.glue_7         0x100083b8        0x0
+ .glue_7        0x100083b8        0x0 linker stubs
 
-.glue_7t        0x100083b0        0x0
- .glue_7t       0x100083b0        0x0 linker stubs
+.glue_7t        0x100083b8        0x0
+ .glue_7t       0x100083b8        0x0 linker stubs
 
-.vfp11_veneer   0x100083b0        0x0
- .vfp11_veneer  0x100083b0        0x0 linker stubs
+.vfp11_veneer   0x100083b8        0x0
+ .vfp11_veneer  0x100083b8        0x0 linker stubs
 
-.v4_bx          0x100083b0        0x0
- .v4_bx         0x100083b0        0x0 linker stubs
+.v4_bx          0x100083b8        0x0
+ .v4_bx         0x100083b8        0x0 linker stubs
 
-.iplt           0x100083b0        0x0
- .iplt          0x100083b0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100083b8        0x0
+ .iplt          0x100083b8        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x100083b0    0x37c84
+.rodata         0x100083b8    0x37c84
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x100083b0       0x20 CMakeFiles/soil-sensor.dir/soil-sensor.c.obj
+                0x100083b8       0x20 CMakeFiles/soil-sensor.dir/soil-sensor.c.obj
  .rodata.user_irq_claim_unused.str1.4
-                0x100083d0       0x1b CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100083eb        0x5 
+                0x100083d8       0x1b CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100083f3        0x5 
  .rodata.at_the_end_of_time
-                0x100083f0        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x100083f0                at_the_end_of_time
+                0x100083f8        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100083f8                at_the_end_of_time
  .rodata.hardware_alarm_claim.str1.4
-                0x100083f8       0x22 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x1000841a        0x2 
+                0x10008400       0x22 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10008422        0x2 
  .rodata.panic.str1.4
-                0x1000841c       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10008424       0x10 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x12 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x1000842c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10008434        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x10008438       0x15 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1000844d        0x3 
+                0x10008440       0x15 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10008455        0x3 
  .rodata._vsnprintf
-                0x10008450      0x19c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x100085ec        0x4 
+                0x10008458      0x19c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x100085f4        0x4 
  .rodata.pow10.0
-                0x100085f0       0x50 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100085f8       0x50 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x10008640       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10008648       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x10008658       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10008660       0x18 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                   0x1 (size before relaxing)
  .rodata.str1.4
-                0x10008658       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10008660       0x40 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10008698        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100086a0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x100086a4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100086ac        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x100086b0        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100086b8        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x100086bc        0x2 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x100086be        0x2 
+                0x100086c4        0x2 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x100086c6        0x2 
  .rodata.str1.4
-                0x100086c0       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100086c8       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x100086ec        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100086f4        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x100086f8        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10008700        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.cyw43_read_bytes.str1.4
-                0x10008700       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10008708       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_write_bytes.str1.4
-                0x1000871a       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x10008722       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
                                   0xd (size before relaxing)
- *fill*         0x1000871a        0x2 
- .rodata.spi_gap01_sample0_program
-                0x1000871c        0x6 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  *fill*         0x10008722        0x2 
+ .rodata.spi_gap01_sample0_program
+                0x10008724        0x6 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+ *fill*         0x1000872a        0x2 
  .rodata.spi_gap01_sample0_program_instructions
-                0x10008724        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+                0x1000872c        0xc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
  .rodata.cyw43_kso_set.str1.4
-                0x10008730       0x23 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x10008753        0x1 
+                0x10008738       0x23 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x1000875b        0x1 
  .rodata.cyw43_ll_sdpcm_poll_device.str1.4
-                0x10008754       0x55 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x100087a9        0x3 
+                0x1000875c       0x55 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x100087b1        0x3 
  .rodata.cyw43_sdpcm_send_common.str1.4
-                0x100087ac       0x22 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x100087ce        0x2 
+                0x100087b4       0x22 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x100087d6        0x2 
  .rodata.cyw43_do_ioctl.str1.4
-                0x100087d0       0x53 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x10008823        0x1 
+                0x100087d8       0x53 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x1000882b        0x1 
  .rodata.reset_device_core.constprop.0.str1.4
-                0x10008824       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x1000883e        0x2 
+                0x1000882c       0x1a CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x10008846        0x2 
  .rodata.cyw43_ll_bus_init.str1.4
-                0x10008840       0xfe CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x1000893e        0x2 
+                0x10008848       0xfe CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x10008946        0x2 
  .rodata.cyw43_ll_gpio_set.str1.4
-                0x10008940        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10008948        0x8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.w43439A0_7_95_49_00_combined
-                0x10008948    0x36fd8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+                0x10008950    0x36fd8 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
  .rodata.wifi_nvram_4343
-                0x1003f920      0x2e7 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x1003fc07        0x1 
- .rodata        0x1003fc08       0x72 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
- *fill*         0x1003fc7a        0x2 
+                0x1003f928      0x2e7 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x1003fc0f        0x1 
+ .rodata        0x1003fc10       0x72 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+ *fill*         0x1003fc82        0x2 
  .rodata.cyw43_cb_process_async_event.str1.4
-                0x1003fc7c       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1003fc84       0x28 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.cyw43_cb_process_async_event
-                0x1003fca4       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1003fcac       0xbc CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.str1.4
-                0x1003fd60       0x9e CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
- *fill*         0x1003fdfe        0x2 
+                0x1003fd68       0x9e CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+ *fill*         0x1003fe06        0x2 
  .rodata.cyw43_async_event_name_table
-                0x1003fe00      0x164 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+                0x1003fe08      0x164 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
  .rodata.pio_claim_unused_sm.str1.4
-                0x1003ff64       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x1003ff6c       0x24 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.pio_add_program.str1.4
-                0x1003ff88       0x11 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x1003ff99        0x3 
+                0x1003ff90       0x11 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x1003ffa1        0x3 
  .rodata.dma_claim_unused_channel.str1.4
-                0x1003ff9c       0x1e CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- *fill*         0x1003ffba        0x2 
+                0x1003ffa4       0x1e CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ *fill*         0x1003ffc2        0x2 
  .rodata.cyw43_cb_tcpip_set_link_up.str1.4
-                0x1003ffbc       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+                0x1003ffc4       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
  .rodata.async_context_threadsafe_background_lock_check.str1.4
-                0x1003ffdc       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x1003ffe4       0x20 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
  .rodata.template
-                0x1003fffc       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-                0x10040034                . = ALIGN (0x4)
+                0x10040004       0x38 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+                0x1004003c                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10040034                . = ALIGN (0x4)
+                0x1004003c                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10040034                __exidx_start = .
+                0x1004003c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10040034                __exidx_end = .
-                0x10040034                . = ALIGN (0x4)
-                0x10040034                __binary_info_start = .
+                0x1004003c                __exidx_end = .
+                0x1004003c                . = ALIGN (0x4)
+                0x1004003c                __binary_info_start = .
 
-.binary_info    0x10040034       0x24
+.binary_info    0x1004003c       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr81
-                0x10040034        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr75
-                0x10040038        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr50
                 0x1004003c        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr44
+ .binary_info.keep.__bi_ptr75
                 0x10040040        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr38
+ .binary_info.keep.__bi_ptr50
                 0x10040044        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr30
+ .binary_info.keep.__bi_ptr44
                 0x10040048        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .binary_info.keep.__bi_ptr22
+ .binary_info.keep.__bi_ptr38
                 0x1004004c        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr30
+                0x10040050        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .binary_info.keep.__bi_ptr22
+                0x10040054        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr34
-                0x10040050        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10040058        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr33
-                0x10040054        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10040058                __binary_info_end = .
+                0x1004005c        0x4 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10040060                __binary_info_end = .
 
-.rel.dyn        0x10040058        0x0
- .rel.iplt      0x10040058        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10040058                . = ALIGN (0x4)
+.rel.dyn        0x10040060        0x0
+ .rel.iplt      0x10040060        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10040060                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2365,7 +2366,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x20000000       0xc0 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x550 load address 0x10040058
+.data           0x200000c0      0x550 load address 0x10040060
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2474,36 +2475,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x20000610                . = ALIGN (0x4)
                 0x20000610                __data_end__ = .
-                0x10040058                __etext = LOADADDR (.data)
+                0x10040060                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000610        0x0 load address 0x100405a8
+                0x20000610        0x0 load address 0x100405b0
  .tm_clone_table
                 0x20000610        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000610        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000610        0x0 load address 0x100405a8
+.igot.plt       0x20000610        0x0 load address 0x100405b0
  .igot.plt      0x20000610        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000610        0x0 load address 0x100405a8
+                0x20000610        0x0 load address 0x100405b0
                 0x20000610                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100405a8
+.scratch_x      0x20040000        0x0 load address 0x100405b0
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100405a8                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100405b0                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100405a8
+.scratch_y      0x20041000        0x0 load address 0x100405b0
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100405a8                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100405b0                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000610      0xe64
                 0x20000610                . = ALIGN (0x4)
@@ -2604,8 +2605,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100405a8        0x0
-                0x100405a8                PROVIDE (__flash_binary_end = .)
+.flash_end      0x100405b0        0x0
+                0x100405b0                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2680,7 +2681,7 @@ LOAD CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/hardwa
 LOAD CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 LOAD CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 LOAD CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-LOAD /tmp/cc4tzIbn.o
+LOAD /tmp/ccushLUf.o
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2798,7 +2799,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007d8       0x2c CMakeFiles/soil-sensor.dir/home/sheldon/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
  .ARM.attributes
-                0x00000804       0x22 /tmp/cc4tzIbn.o
+                0x00000804       0x22 /tmp/ccushLUf.o
  .ARM.attributes
                 0x00000826       0x1e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
