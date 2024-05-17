@@ -33,17 +33,15 @@ int main() {
 
 	while(1) {
 		
-		sleep_ms(1000);
-
-		uint16_t result = adc_read();
-		printf("value: %d \n", result);
-		
-//		while(gpio_get(gpio_pin)) {
-//			cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-//			uint16_t result = adc_read();
-//			printf("value: %d \n", result);
-//		}
-//		cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
+		while(gpio_get(gpio_pin)) {
+			cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+			uint16_t result = adc_read();
+			printf("value: %d \n", result);
+			sleep_ms(250);
+		}
+		cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
 	}
+
+	return 0;
 }
 
