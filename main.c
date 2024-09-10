@@ -16,14 +16,18 @@
 #include "credentials.h"
 #include "sntp.h"
 
+char *set_hostname();
+
 void my_smtp_result_fn(void *arg, u8_t smtp_result, u16_t srv_err, err_t err) {
     printf("mail (%p) sent with results 0x%02x, 0x%08x\n", arg, smtp_result, srv_err, err);
+    sleep_ms(10000);
+    cyw43_arch_deinit();
 }
 
 void send_smtp_mail() {
     struct tm t;
     getDateNow(&t);
-
+    
     printf("The alarm has gone off and I have entered the function\n");
 
     char Date[100];
@@ -31,29 +35,23 @@ void send_smtp_mail() {
     char message[] = "This email was sent at ";
     strcat(message, Date);
 
-    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", message, my_smtp_result_fn, NULL);
+    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", message, my_smtp_result_fn, NULL);  
 }
 
 // void test_callback() {
 //     printf("Alarm works!\n");
 // }
 
-char* set_hostname() {
+char *set_hostname() {
     char *result = (char *)malloc(20 * sizeof(char));
-    char board_id[8];
+    char *board_id = (char *)malloc(8 * sizeof(char));
     pico_unique_board_id_t uid;
 
     pico_get_unique_board_id(&uid);
-    //printf("\n\n%02x\n", uid.id);
-    //printf("%d\n\n", uid.id);
+    printf("\n%02x\n", uid.id);
 
-
-    if (result == NULL) {
-        return NULL;
-    }
-
-    result[0] = "\0";
-
+    //Combine "Soil-Sensor-" with 664 bit Hex string
+    strcpy(result, "Soil-Sensor-");
     sprintf(board_id, "%02X", uid.id);
     strcat(result, board_id);
 
@@ -142,17 +140,16 @@ int main() {
     smtp_set_server_port(465);
     smtp_set_auth(email_address, email_password);
 
-    // Send initial email
-    //smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", "Soil Sensor has started", my_smtp_result_fn, NULL);
+    // Disconnect from WiFi
+    cyw43_arch_deinit();
 
     rtc_set_alarm(&alarm_time, &send_smtp_mail);
-    printf("current time is %d/%d/%d at %d:%d:%d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
-    printf("Alarm is set for %d/%d/%d at %d:%d:%d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
-
-    // Send initial email once system is started
-    //smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", message, my_smtp_result_fn, NULL);
+    printf("current time is %d/%d/%d at %d:%02d:%02d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
+    printf("Alarm is set for %d/%d/%d at %d:%02d:%02d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
     
-    //smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", "Hi Sheldon, This is a test message from the soil sensor", my_smtp_result_fn, NULL);
+    // Send initial email
+    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", "Soil Sensor has started", my_smtp_result_fn, NULL);
+
     //struct repeating_timer timer;
     //add_repeating_timer_ms(60000, send_smtp_mail, NULL, &timer);
 
