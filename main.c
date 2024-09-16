@@ -44,17 +44,10 @@ char *set_hostname() {
     char board_id[17];
     pico_unique_board_id_t uid;
 
-    /*
-        Original int-based version
-    */
-    //pico_get_unique_board_id(&uid);
-    //printf("\n%d\n", uid.id);
-
     pico_get_unique_board_id_string(board_id, 17);
 
     //Combine "Soil-Sensor-" with 64 bit Hex string
     strcpy(result, "Soil-Sensor-");
-    printf("%s\n", board_id);
     //sprintf(board_id, "%d", uid.id);
     strcat(result, board_id);
 
@@ -115,11 +108,13 @@ datetime_t *set_init_alarm_time(datetime_t *curr_time, datetime_t *alarm_time) {
 
 int main() {
 
+    char *hostname = set_hostname();
+
     stdio_init_all();
     rtc_init();
     
     // Connect to Wifi and initialize TLS client for SMTP
-    connectToWiFi(country, ssid, pass, auth, set_hostname(), NULL, NULL, NULL);
+    connectToWiFi(country, ssid, pass, auth, hostname, NULL, NULL, NULL);
     struct altcp_tls_config *tls_config = altcp_tls_create_config_client(NULL, 0);
     smtp_set_tls_config(tls_config);
 
@@ -137,17 +132,19 @@ int main() {
     datetime_t alarm_time;
     set_init_alarm_time(&t, &alarm_time);
 
+    rtc_set_alarm(&alarm_time, &send_smtp_mail);
+    //sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
+    printf("current time is %d/%d/%d at %d:%02d:%02d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
+    printf("Alarm is set for %d/%d/%d at %d:%02d:%02d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
+
     smtp_set_server_addr("smtp.gmail.com");
     smtp_set_server_port(465);
     smtp_set_auth(email_address, email_password);
 
     // Send initial email
-    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", set_hostname(), my_smtp_result_fn, NULL);
+    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", strcat("Soil Sensor is online - ", hostname), my_smtp_result_fn, NULL);
 
-    rtc_set_alarm(&alarm_time, &send_smtp_mail);
-    //sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
-    printf("current time is %d/%d/%d at %d:%02d:%02d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
-    printf("Alarm is set for %d/%d/%d at %d:%02d:%02d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
+    free(hostname);
 
     while(1) {
         tight_loop_contents();
