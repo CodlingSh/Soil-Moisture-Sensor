@@ -132,19 +132,29 @@ int main() {
     datetime_t alarm_time;
     set_init_alarm_time(&t, &alarm_time);
 
-    rtc_set_alarm(&alarm_time, &send_smtp_mail);
-    //sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
+    //rtc_set_alarm(&alarm_time, &send_smtp_mail);
+    printf("\n*********************\n");
     printf("current time is %d/%d/%d at %d:%02d:%02d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
     printf("Alarm is set for %d/%d/%d at %d:%02d:%02d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
+    printf("*********************\n\n");
 
     smtp_set_server_addr("smtp.gmail.com");
     smtp_set_server_port(465);
     smtp_set_auth(email_address, email_password);
 
-    // Send initial email
-    smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", strcat("Soil Sensor is online - ", hostname), my_smtp_result_fn, NULL);
+    char *message = (char *)malloc(strlen(hostname) + strlen(" is online!") + 1);
+    if (message) {
+        strcpy(message, hostname);
+        strcat(message, " is online!");
+        // Send initial email
+        smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", message, my_smtp_result_fn, NULL);
+        free(message);
+    }
 
     free(hostname);
+
+
+    //sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
 
     while(1) {
         tight_loop_contents();
