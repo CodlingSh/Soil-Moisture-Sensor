@@ -5,7 +5,7 @@
 #include "pico/cyw43_arch.h"
 #include "pico/time.h"
 #include "pico/unique_id.h"
-//#include "pico/sleep.h"
+#include "pico/sleep.h"
 #include "lwip/pbuf.h"
 #include "lwip/udp.h"
 #include "lwip/dns.h"
@@ -17,7 +17,7 @@
 #include "credentials.h"
 #include "sntp.h"
 
-char *set_hostname();
+char *get_hostname();
 
 void my_smtp_result_fn(void *arg, u8_t smtp_result, u16_t srv_err, err_t err) {
     printf("mail (%p) sent with results 0x%02x, 0x%08x\n", arg, smtp_result, srv_err, err);
@@ -25,20 +25,25 @@ void my_smtp_result_fn(void *arg, u8_t smtp_result, u16_t srv_err, err_t err) {
 
 void send_smtp_mail() {
     struct tm t;
+    char *hostname = get_hostname();
+
     getDateNow(&t);
     
     printf("The alarm has gone off\n");
 
-    char Date[50];
-    strftime(Date, sizeof(Date), "%a, %d %b %Y %H:%M:%S %Z", &t);
-    char message[] = "This email was sent at ";
-    strcat(message, Date);
+    char *message = (char *)malloc(strlen(hostname) + strlen(" - 99%") + 1);
+    strcpy(message, hostname);
+    strcat(message, "- 99%");
+    //char Date[50];
+    //strftime(Date, sizeof(Date), "%a, %d %b %Y %H:%M:%S %Z", &t);
+    //char message[] = "This email was sent at ";
+    //strcat(message, Date);
 
 
     smtp_send_mail("sheldonspeppers@gmail.com", "5193284249@txt.bell.ca", "", message, my_smtp_result_fn, NULL);
 }
 
-char *set_hostname() {
+char *get_hostname() {
     char *result = (char *)malloc(32 * sizeof(char));
     //char *board_id = (char *)malloc(16 * sizeof(char));
     char board_id[17];
@@ -108,7 +113,7 @@ datetime_t *set_init_alarm_time(datetime_t *curr_time, datetime_t *alarm_time) {
 
 int main() {
 
-    char *hostname = set_hostname();
+    char *hostname = get_hostname();
 
     stdio_init_all();
     rtc_init();
@@ -132,7 +137,6 @@ int main() {
     datetime_t alarm_time;
     set_init_alarm_time(&t, &alarm_time);
 
-    //rtc_set_alarm(&alarm_time, &send_smtp_mail);
     printf("\n*********************\n");
     printf("current time is %d/%d/%d at %d:%02d:%02d\n", t.month, t.day, t.year, t.hour, t.min, t.sec);
     printf("Alarm is set for %d/%d/%d at %d:%02d:%02d\n", alarm_time.month, alarm_time.day, alarm_time.year, alarm_time.hour, alarm_time.min, alarm_time.sec);
@@ -153,8 +157,9 @@ int main() {
 
     free(hostname);
 
+    //rtc_set_alarm(&alarm_time, &send_smtp_mail);
 
-    //sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
+    sleep_goto_sleep_until(&alarm_time, &send_smtp_mail);
 
     while(1) {
         tight_loop_contents();
