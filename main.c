@@ -33,7 +33,7 @@ void send_smtp_mail() {
 
     char *message = (char *)malloc(strlen(hostname) + strlen(" - 99%") + 1);
     strcpy(message, hostname);
-    strcat(message, "- 99%");
+    strcat(message, "- XX%");
     //char Date[50];
     //strftime(Date, sizeof(Date), "%a, %d %b %Y %H:%M:%S %Z", &t);
     //char message[] = "This email was sent at ";
