@@ -19,5 +19,6 @@ target_link_libraries(soil-sensor
     pico_lwip_mbedtls
     pico_mbedtls
     pico_unique_id
-    hardware_rtc)
+    hardware_rtc
+    hardware_adc)
 pico_add_extra_outputs(soil-sensor)
